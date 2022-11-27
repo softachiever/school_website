@@ -1,0 +1,156 @@
+
+/*=================beginning of global styles=============*/
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+a{
+    color: var(--color_white);
+    font-weight: 500;
+    line-height: 1.5;
+}
+img{
+    display: inline-block;
+    width: 45vw;
+    height: 70vh;
+    
+}
+
+.btn{
+    color: var(--color_black);
+    background-color:var(--color_white);
+}
+
+:root{
+    --color_primary:#6c63ff;
+    --color_success:#00bf8e;
+    --color_warning:#f7c94b;
+    --color_danger:#f75842;
+    --color_danger_variant:rgba(247,88,66,0.4);
+    --color_white:#fff;
+    --color_light:rgb(255,255,255,0.7);
+    --color_black:#000;
+    --color_bg:#1f2641;
+    --color_bg1:#2e3267;
+    --color_bg3:#424890;
+
+    --container_width_lg:76%;
+    --container_width_md:76%;
+    --container_width_sm:76%;
+
+    --transition: all 400ms ease;
+
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1.7;
+    color:var(--color_white) ;
+    background-color:var(--color_bg);
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+header h2{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container{
+    width:var(--container_width_lg);
+    margin: 0 auto;
+
+}
+h1,h2,h3,h4,h5{
+    text-align: center;
+    
+}
+
+h1{
+   font-size: 3rem;
+}
+
+h2{
+    font-size:2.6rem;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+h4{
+    font-size: 1.8rem;
+}
+
+h5{
+    font-size:1.5rem;
+}
+
+/*=================end of header styles=============*/
+
+
+/*=================beginning of header styles=============*/
+nav{
+    position: fixed;
+    height: 5rem;
+    width: 100vw;
+    top: 0;
+    background-color:transparent;
+}
+
+nav:hover{
+    box-shadow: 2px 5px 0.5px var(--color_white);
+    transition: var(--transition);
+      
+}
+.nav__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    gap: 3rem;
+    height: 100%;
+    
+}
+
+ .container__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+nav a:hover{
+     color:var(--color_danger_variant);
+     transition: var(--transition);
+    
+}
+
+nav li:active{
+    border-bottom: red;
+}
+
+nav button{
+    display: none;
+}
+
+/*=================beginning of header styles=============*/
+.header__container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    top: 5rem;
+}
