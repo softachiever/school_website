@@ -10,7 +10,7 @@ const open = document.querySelector(".open-menu-btn");
 
 const close = document.querySelector(".close-menu-btn");
 
-function open (){
+function open(){
     
     menu.style.display = "block";
     open.style.display = "inline-block";
@@ -19,4 +19,5 @@ function open (){
 }
 
 open.addEventListener("click", open);
+
 

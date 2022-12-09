@@ -1,0 +1,68 @@
+.general__container{
+    position: relative;
+    top: 5rem;
+    display: grid;
+    
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    gap: 0.5rem;
+}
+/*
+body{
+    background: yellow;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}*/
+
+.achievements__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    width: 60%;
+}
+
+.cards__items{
+    width: 8rem;
+    height: 13rem;
+    background-color:red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    gap: 0.2rem;
+    padding:0.5rem 0;
+    overflow: hid;
+}
+ 
+.achievements__cards span{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: yellow;
+    border-radius: 0.2rem;
+}
+
+#green{
+    background-color: green;
+}
+span{
+    display:block;
+}
+
+.achievements__cards:nth-child(2) span{
+    background-color: aqua;
+    color: brown;
+}
+
+.cards__items span:nth-child(3){
+    background-color: blue;
+}
+
+
+.header__achievements p{
+    margin: 2rem 0;
+}
