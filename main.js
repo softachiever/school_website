@@ -1,23 +1,48 @@
+// channge navbar on scroll
 window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle
-    ('window-scroll',window.scrollY > 100)
+    ("window-scroll", window.scrollY > 100)
 });
 
-/*changing and hidding nav styles*/
-const menu =document.querySelector(".nav__menu");
 
-const open = document.querySelector(".open-menu-btn");
+// opening and closing the frequently asked questions
+const faqs = document.querySelectorAll('.faq');
+faqs.forEach(faq=> {
+    faq.addEventListener('click',()=>{
+        faq.classList.toggle('open');
 
-const close = document.querySelector(".close-menu-btn");
-
-function open(){
+        //change icon on each click
+       const icon = faq.querySelector('.faq__icon i');
+        if (icon.classname === "bi bi-plus") {
+            icon.className = "bi bi-dash-lg";
+        } 
+        else {
+        
+            icon.className ="bi bi-plus";
+        }
+       
+    })
     
-    menu.style.display = "block";
-    open.style.display = "inline-block";
-    close.style.display = "none"
+});
 
+/*nav menu show */
+
+const menu = document.querySelector(".nav__menu");
+const menubtn = document.querySelector("#open-menu-btn");
+const closebtn = document.querySelector("#close-menu-btn");
+
+menubtn.addEventListener("click", ()=>{
+    menu.style.display = "flex";
+    closebtn.style.display = "inline-block";
+    menubtn.style.display = "none";
+})
+
+// close nav menu
+const closenav = () => {
+    menu.style.display = "none";
+    closebtn.style.display = "none";
+    menubtn.style.display ="inline-block";
 }
 
-open.addEventListener("click", open);
 
-
+closebtn.addEventListener('click', closenav)
